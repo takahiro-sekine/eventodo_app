@@ -1,0 +1,16 @@
+<div class="form-task">
+  <%= form_for(@task) do |f| %>
+   <%= render 'shared/error_message', model: f.object %>
+  <div class="form-group">
+    <%= f.label :task_title, "表題"%><br />
+    <%= f.text_field :task_title%>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :complete, "日時", class: 'control-label' %><br />
+    <%= f.date_field :complete, class: 'form-control' %>
+  </div>
+    <%= f.submit '保存' %>
+  <% end %>
+</div>
+<p><%= link_to '一覧に戻る', tasks_url %></p>

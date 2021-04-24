@@ -1,0 +1,19 @@
+ja:
+  activerecord:
+    formats:
+      default: "%Y/%m/%d"
+      long: "%Y年%m月%d日(%a)"
+      short: "%m/%d"
+    models:
+      event: イベント
+    attributes:
+      event:
+        title: タイトル
+        body: 内容
+        limit_date: 日時
+    models:
+      task: イベント
+    attributes:
+      task:
+        task_title: タイトル
+        complete: 日時

@@ -1,0 +1,14 @@
+<div class="event__box">
+  <div class="event_title">
+    <%= link_to " #{event.title} ", event_path(event.id), class: :card__title%>
+  </div>  
+  <p class="event__body">
+    <%= event.body %>
+  </p>
+  <p class="event__date">
+    <%= event.limit_date %>
+  </p>
+  <p class="event__name">
+    <%= link_to "by #{event.user.name}", "/users/#{event.user.id}", class: :card__user %>
+  </p>
+  </div> 

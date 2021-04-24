@@ -1,0 +1,28 @@
+// Place all the styles related to the events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.event__box{
+  width : 500px;
+  height : 150px;
+  border : solid 1px #333 ;
+  margin: 10px;
+}
+
+.form-control{
+  width: 500px;
+}
+
+.form__control{
+  width: 500px;
+  height: 150px;
+}
+
+.form_control{
+  width: 500px;
+}
+
+.form__sub{
+  margin: 10px;
+  background-color: blue;
+  color: white;
+}

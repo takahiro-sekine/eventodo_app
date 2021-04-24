@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+ .wapper{
+  display:flex;
+}
+.header{
+  display: flex;
+  height: 70px;
+  width: 100%;
+  background-color: #f0f8ff;
+}
+
+.navbrand-nav{
+  display: flex;
+  list-style: none;
+  overflow: hidden;
+}
+
+.nav-item{
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  float: left;
+}
+
+.navbar-brand{
+  text-align: none;
+  text-decoration:none;
+  font-weight: 800;
+  color: #000080;
+}
+
+.navlink{
+  text-decoration:none;
+  color: #000080;
+}

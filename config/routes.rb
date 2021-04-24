@@ -7,4 +7,6 @@ Rails.application.routes.draw do
       get 'search'
     end
   end
+  resources :tasks
+  resources :users, only: :show
 end

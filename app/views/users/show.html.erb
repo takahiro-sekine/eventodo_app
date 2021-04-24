@@ -1,0 +1,29 @@
+<h2 class="page-heading">
+  <%= "#{@name}の情報"%>
+</h2>
+<table class="table">
+  <tbody>
+    <tr>
+      <th class="table__col1">名前</th>
+      <td class="table__col2"><%= @name %></td>
+    </tr>
+    <tr>
+      <th class="table__col1">ニックネーム</th> 
+      <td class="table__col2"><%= @nickname %></td> 
+    </tr>
+    <tr>
+      <th class="table__col1">誕生日</th>
+      <td class="table__col2"><%= @birthday %></td> 
+    </tr>
+    <tr>
+      <th class="table__col1">役職</th>
+      <td class="table__col2"><%= @position %></td> 
+    </tr>
+  </tbody>
+</table>
+<h2 class="page-heading">
+  イベント
+</h2>
+<div class="user__card">
+  <%= render partial: "shared/event", collection: @events %>
+</div>

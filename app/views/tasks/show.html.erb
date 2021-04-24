@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <th>内容</th>
+    <td><%= @task.task_title %></td>
+  </tr>
+  <div>
+    <select name="state">
+      <% @status.each_with_index do |s,i| %>
+      <option value="<%= s %>"><%= s %></option>
+      <% end %>
+    </select>
+    <label>Task State</label>
+  </div>
+</table>
+
+<p><%= link_to '一覧に戻る', tasks_url %></p>

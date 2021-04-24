@@ -1,0 +1,23 @@
+<% now = Time.zone.now %>
+<%= form_with(model: @event, local: true) do |f| %>
+  <%= render 'shared/error_message', model: f.object %>
+  <div class="form-group">
+    <%= f.label :title, "表題"%><br />
+    <%= f.text_field :title, class:"form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :body, "内容"%><br />
+    <%= f.text_area :body, class:"form__control" , row: 10 %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :limit_date, "日時", class: 'control-label' %><br />
+    <%= f.date_field :limit_date, class: 'form_control' %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form__sub  %>
+  </div>
+
+<% end %>
